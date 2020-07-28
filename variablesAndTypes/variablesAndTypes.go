@@ -50,5 +50,5 @@ func main() {
 	fmt.Println(string1, string2)
 
 	integer, boolean := 4, true
- 	fmt.Println(integer, boolean)
+	fmt.Println(integer, boolean)
 }
