@@ -8,6 +8,9 @@ import "fmt"
 // Buffered channels accept a limited number of values
 // without a corresponding receiver for those values.
 
+// Unbuffered channels block receivers until data is available on the channel and senders
+// until a receiver is available. Buffered channels will only block a sender once the buffer fills up.
+
 func main() {
 	// a channel of string buffering up to 2 values
 	message := make(chan string, 2)
